@@ -67,9 +67,6 @@ public class MessageDispatcher extends HttpServlet {
 		response.setCharacterEncoding( "UTF-8");
 		response.setContentType("text/xml;");
 		response.getWriter().write(document.asXML());
-		/*if (messages != null) {
-			sendMessagesToClient(response, messages);
-		}*/
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
