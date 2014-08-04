@@ -1,4 +1,7 @@
-<%@ page import="service.BookmarkService,bean.Bookmark,java.util.Iterator" language="java" contentType="text/html; charset=UTF-8" pageEncoding="GBK"%>
+<%@ page
+	import="service.BookmarkService,bean.Bookmark,java.util.Iterator"
+	language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="GBK"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,14 +22,14 @@
 				Bookmark bookmark = bookmarkIterator.next();
 		%>
 		<tr>
-			<td><a href="http://<%=bookmark.getUrl()%>"><%=bookmark.getTitle()%></a></td>
+			<td><a href="http://<%=bookmark.getUrl()%>" target="_blank"><%=bookmark.getTitle()%></a></td>
 			<td><%=bookmark.getCategory()%></td>
 		</tr>
 
 		<%
 			}
 		%>
-		
+
 	</table>
 	<%@include file="/addBookmark.html"%>
 </body>
