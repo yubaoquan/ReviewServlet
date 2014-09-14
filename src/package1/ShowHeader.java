@@ -24,7 +24,10 @@ public class ShowHeader extends HttpServlet {
 		while (e.hasMoreElements()) {
 			String param = (String) e.nextElement();
 			out.println(param + ": " + request.getHeader(param) + "<br>");
+			
 		}
+		out.println("request uri: " + request.getRequestURI() + "<br>");
+		out.println("request url: " + request.getRequestURL() + "<br>");
 		out.println("</body>");
 		out.close();
 	}
