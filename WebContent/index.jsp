@@ -8,5 +8,8 @@
 </head>
 <body>
 hello
+<%=request.getContextPath() %>
+<br>
+<strong>application.getRealPath("/"):</strong><%=application.getRealPath("/") %>
 </body>
 </html>
