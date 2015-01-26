@@ -1,10 +1,13 @@
 package studyJfinal;
 
 import com.jfinal.config.*;
+import com.jfinal.render.ViewType;
 
 public class DemoConfig extends JFinalConfig {
 	public void configConstant(Constants me) {
 		me.setDevMode(true);
+		me.setViewType(ViewType.FREE_MARKER);
+//		me.
 	}
 
 	public void configRoute(Routes me) {
