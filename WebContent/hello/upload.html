@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+　　function saveRequestFrom(){
+
+　　　　var form = document.getElementById("form1");
+
+　　　　form.action="upload";
+
+　　　　form.submit();
+　　}
+
+</script>
+</head>
+<body>
+	<form id="form1" method="post" enctype="multipart/form-data">
+
+		<input type="file" id="upload" name="upload" /> <input type="button"
+			value="保存" onclick="saveRequestFrom()" />
+
+	</form>
+</body>
+</html>
